@@ -1,9 +1,11 @@
 :root {
-  --cor-primaria: #d9d9d9;
-  --cor-secundaria: #0a9396;
+  --cor-backgroundHeader: #d9d9d9;
+  --cor-secundaria: #37505C;
   --cor-clara: #179BDC;
+  --cor-primaria: #3A6D86;
   --cor-fundo: #f8f9fa;
   --cor-texto: #001219;
+  --cor-textobranco: aliceblue;
   --fonte-principal: 'Roboto', sans-serif;
 }
 
@@ -22,7 +24,7 @@ body {
 
 
 header {
-  background-color: var(--cor-primaria);
+  background-color: var(--cor-backgroundHeader);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -247,7 +249,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: aliceblue;
+      background-color: var(--cor-textobranco);
       flex-direction: column;
       color:black;
       margin-top: 2rem;
@@ -276,7 +278,7 @@ header {
       flex-direction: row;
       justify-content: center;
       background-color: #272F33;
-      color: aliceblue;
+      color: var(--cor-textobranco);
       margin-bottom: -1rem;
     }
 
@@ -296,8 +298,8 @@ header {
     }
 
     .espacamento {
-      background-color: aliceblue;
-      color: aliceblue;
+      background-color: var(--cor-textobranco);
+      color: var(--cor-textobranco);
       margin-top: -4em;
       height: 80px;
     }
@@ -310,7 +312,7 @@ header {
 
     .HeroPublico {
   
-      color: aliceblue;
+      color: var(--cor-textobranco);
       font-size: 3.5rem;
     }
 
