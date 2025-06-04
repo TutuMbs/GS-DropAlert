@@ -43,7 +43,7 @@ header {
 .logo {
   font-size: 1.75rem;
   font-weight: 700;
-  color: #3A6D86;
+  color: var(--cor-primaria);
   letter-spacing: 1px;
 }
 .logoimg {
@@ -59,7 +59,7 @@ header {
 
 .menu li a {
   text-decoration: none;
-  color: #3A6D86;
+  color:  var(--cor-primaria);
   font-weight: 600;
   font-size: 1.2rem;
   position: relative;
@@ -126,7 +126,7 @@ header {
 
 .hero {
   position: relative;
-  color: white;
+  color: var(--cor-textobranco);
   text-align: center;
   padding: 100px 20px;
   height: 29rem;
@@ -161,8 +161,8 @@ header {
 }
 
 .btn {
-  background-color: #3A6D86;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(cor-textobranco);
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 4px;
@@ -171,7 +171,7 @@ header {
 }
 
 .btn:hover {
-  background-color: #37505C;
+  background-color: var(--cor-secundaria);
   color: #000;
 }
 
@@ -180,7 +180,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: aliceblue;
+  background-color: var(--cor-textobranco);
   align-items: center;
 }
 
@@ -223,8 +223,8 @@ header {
 }
 
 .btn-veja {
-      background-color: #3A6D86;
-      color: white;
+      background-color: var(--cor-primaria);
+      color: var(--cor-textobranco);
       padding: 12px 24px;
       border: none;
       border-radius: 8px;
@@ -237,7 +237,7 @@ header {
     }
 
     .btn-veja:hover {
-      background-color: #37505C;
+      background-color: var(--cor-secundaria);
       transform: scale(1.05);
     }
 
