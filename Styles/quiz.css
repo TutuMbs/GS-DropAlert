@@ -1,6 +1,6 @@
   :root {
-      --cor-primaria: #005f73;
-      --cor-secundaria: #0a9396;
+      --cor-primaria: #3A6D86;
+      --cor-secundaria: #37505C;
       --cor-clara: #e9d8a6;
       --cor-fundo: #f8f9fa;
       --cor-texto: #001219;
@@ -27,6 +27,10 @@
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .question {
@@ -52,6 +56,9 @@
       font-size: 1rem;
       cursor: pointer;
       margin-top: 1rem;
+      display: flex;
+      justify-self: center;
+
     }
 
     .result {
@@ -59,3 +66,5 @@
       font-weight: bold;
       font-size: 1.2rem;
     }
+
+ 
