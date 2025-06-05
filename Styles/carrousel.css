@@ -31,12 +31,42 @@
 
 .hero-caption {
   position: absolute;
-  bottom: 20%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 80%;
   color: white;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
 }
 
+.hero-caption h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-caption .btn {
+  background: #00aaff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.hero-caption .btn:hover {
+  background: #0077cc;
+}
 .carousel-btn {
   position: absolute;
   top: 50%;

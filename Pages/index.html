@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Chuva Não Espera</title>
   <link rel="stylesheet" href="../Styles/style.css">
+  <link rel="stylesheet" href="../Styles/carrousel.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="../script.js" defer></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -27,31 +30,38 @@
   </header>
 
   <main>
-  <section class="hero-carousel">
+ <section class="hero" id="problema">
   <div class="carousel">
-    <div class="carousel-slide active">
-      <img src="../img/hero1.jpg" alt="Imagem 1">
-      <div class="hero-caption">
-        <h1>A Chuva Não Espera</h1>
-        <p>Transformando previsão de chuva em prevenção de tragédia</p>
-        <a href="#uso" class="btn">Saiba mais</a>
+    <div class="carousel-inner">
+      <div class="carousel-slide">
+        <img src="../img/enchente.jpg" alt="Imagem 1">
+        <div class="hero-caption">
+          <h1> Falta de Avisos em Tempo Hábil</h1>
+          <p>Milhares de famílias em áreas de risco vivem sem qualquer sistema de alerta eficiente. Em muitas situações, os avisos chegam tarde demais, quando a água já invadiu ruas e casas. A ausência de comunicação preventiva transforma chuvas fortes em tragédias anunciadas.
+
+</p>
+          <a href="#uso" class="btn">Saiba mais</a>
+        </div>
       </div>
-    </div>
-    <div class="carousel-slide">
-      <img src="../img/hero2.jpg" alt="Imagem 2">
-      <div class="hero-caption">
-        <h1>Proteja sua Comunidade</h1>
-        <p>Alertas inteligentes para áreas vulneráveis</p>
-        <a href="#uso" class="btn">Saiba mais</a>
+      <div class="carousel-slide">
+        <img src="../img/beneficios2.jpg" alt="Imagem 2">
+        <div class="hero-caption">
+          <h1>A Raiz da Vulnerabilidade</h1>
+          <p>A verdadeira causa não é apenas a chuva, mas sim a falta de acesso à informação. Muitas comunidades vulneráveis não têm canais confiáveis que traduzam previsões técnicas em ações práticas. Isso aumenta os danos, dificulta a evacuação e reduz a capacidade de reação.</p>
+          <a href="#uso" class="btn">Saiba mais</a>
+        </div>
       </div>
-    </div>
-    <div class="carousel-slide">
-      <img src="../img/hero3.jpg" alt="Imagem 3">
-      <div class="hero-caption">
-        <h1>Dados que Salvam Vidas</h1>
-        <p>Tecnologia acessível para todos</p>
-        <a href="#uso" class="btn">Saiba mais</a>
+      <div class="carousel-slide">
+        <img src="../img/python.jpg" alt="Imagem 2">
+        <div class="hero-caption">
+          <h1>Um Problema Evitável</h1>
+          <p>A maioria dos desastres relacionados a enchentes poderia ser evitada com alertas simples e antecipados. Resolver essa falha de comunicação é o primeiro passo para salvar vidas, preservar bens e construir resiliência diante de eventos climáticos extremos.
+
+</p>
+          <a href="#uso" class="btn">Saiba mais</a>
+        </div>
       </div>
+
     </div>
 
     <button class="carousel-btn prev">&#10094;</button>
