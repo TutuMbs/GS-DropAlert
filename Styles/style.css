@@ -16,11 +16,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: var(--fonte-principal);
-  color: var(--cor-texto);
-  background-color: var(--cor-fundo);
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -35,6 +31,45 @@ header {
   top: 0;
   z-index: 1200;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.tema-claro1 {
+  --cor-fundo: aliceblue;
+
+}
+
+.tema-claro2 {
+  --cor-fundo: #fffce4;
+
+}
+
+.tema-claro3 {
+  --cor-fundo: #c0d9ff;
+
+}
+
+/* Aplicação genérica usando variáveis */
+body {
+  background-color: var(--cor-fundo, #ffffff);
+  color: var(--cor-texto, #000000);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: var(--fonte-principal);
+}
+
+/* Estilo dos botões de tema */
+.tema-selector {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.tema-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .navbar-container {
@@ -199,7 +234,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--cor-textobranco);
+ background-color: var(--cor-fundo, #ffffff);
   align-items: center;
 }
 
@@ -208,7 +243,7 @@ header {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  background-color: rgba(245, 244, 244, 0.685);
+ background-color: var(--cor-fundo, #ffffff);
   border-radius: 1rem;
   box-shadow: 0px 4px 23px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 4px 23px -2px rgba(0,0,0,0.75);
@@ -270,7 +305,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--cor-textobranco);
+      background-color: var(--cor-fundo, #ffffff);
       flex-direction: column;
       color:black;
       margin-top: 2rem;
@@ -352,7 +387,7 @@ header {
     }
 
     .espacamento {
-      background-color: var(--cor-textobranco);
+      background-color: var(--cor-fundo, #ffffff);
       color: var(--cor-textobranco);
       margin-top: -4em;
       height: 80px;
@@ -412,7 +447,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 4rem 1rem;
-  background-color: #f5f7fa;
+  background-color: var(--cor-fundo, #ffffff);
   
 }
 

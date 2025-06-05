@@ -80,3 +80,16 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 });
+
+//Seletor de cor 
+document.addEventListener('DOMContentLoaded', () => {
+  const botoesTema = document.querySelectorAll('.tema-btn');
+
+  botoesTema.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const temaSelecionado = btn.getAttribute('data-tema');
+      document.body.className = ''; // limpa qualquer tema anterior
+      document.body.classList.add(`tema-${temaSelecionado}`);
+    });
+  });
+});
