@@ -28,3 +28,21 @@ setInterval(() => {
 document.addEventListener("DOMContentLoaded", () => {
   showSlide(index);
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("active");
+  });
+
+  // Fecha o menu ao clicar em um item
+  const links = menu.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+});
